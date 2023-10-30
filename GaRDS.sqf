@@ -37,17 +37,17 @@ _strObject = str _object;
 
 if(_severity > 1) then{
     _severity = 1;
-    hintSilent (["Fix the severity on your aRDS call for object '", _strObject,  "'. Err: _severity below 0."] joinString "");
+    hintSilent (["Fix the severity on your GaRDS call for object '", _strObject,  "'. Err: _severity below 0."] joinString "");
 };
 
 if(_severity < 0) then{
     _severity = 0;
-    hintSilent (["Fix the severity on your aRDS call for object '", _strObject,  "'. Err: _severity below 0."] joinString "");
+    hintSilent (["Fix the severity on your GaRDS call for object '", _strObject,  "'. Err: _severity below 0."] joinString "");
 };
 
 if(_amount < 0) then{
     _amount = 0;
-    hintSilent (["Fix the amount on your aRDS call for object '", _strObject,  "'. Err: _amount below 0."] joinString "");
+    hintSilent (["Fix the amount on your GaRDS call for object '", _strObject,  "'. Err: _amount below 0."] joinString "");
 };
 
 
