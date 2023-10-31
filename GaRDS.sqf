@@ -16,11 +16,11 @@
 
 /*
 *for example: 
-*[player, "bullet", 2, 0.7, false, 0] spawn execVM "Scripts\GaRDS.sqf"; 
+*[player, "bullet", 2, 0.7, false, 0] execVM "Scripts\GaRDS.sqf"; 
 *would result in 2 random bullet wounds with a severity of 70% with no guaranteed unconsciousness
 *
 *whereas:
-*[player, "stab", 149, 1, true, 120] spawn execVM "Scripts\GaRDS.sqf"; 
+*[player, "stab", 149, 1, true, 120] execVM "Scripts\GaRDS.sqf"; 
 *would result in 149 random stab wounds with a severity of 100% with a guaranteed unconsciousness of at least 120 seconds
 */
 
