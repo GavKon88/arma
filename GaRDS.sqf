@@ -31,9 +31,9 @@ _bodyPart = ["Head", "Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"];
 
 
 
-//defaulting
+//defaulting and error catching
 
-_strObject = str _object;
+_strObject = (str _object);
 
 if(_severity > 1) then{
     _severity = 1;
@@ -53,7 +53,7 @@ if(_amount < 0) then{
 
 
 
-//assign damage/uncon
+//assigning damage and unconsciousness
 
 for "_i" from 1 to _amount do {
     [_object, _severity, _bodyPart # ([0 , 5] call BIS_fnc_randomInt), _type] call ace_medical_fnc_addDamageToUnit
