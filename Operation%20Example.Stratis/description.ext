@@ -1,0 +1,57 @@
+/*
+*Author: Gavinkon88
+*Example description.ext
+*Last modified: 11 / 04 / 23
+*/
+
+
+//This file should be in the root mission folder (i.e. with the mission.sqm file)
+//More info and options can be found at https://community.bistudio.com/wiki/Description.ext
+
+
+//Info
+author = "name"; //your name
+onLoadName = "mission name"; //mission name on load
+onLoadMission = "do the thing or something"; //description under picture on load
+
+
+//Attributes
+respawnOnStart = -1; //whether or not to respawn on start (-1 - No respawn and no script / 0 - No respawn and yes script / 1 - Respawn and script)
+loadScreen = "Textures\load.paa"; //texture of the load screen preview image, MUST BE IN .paa FORMAT! Use https://paa.gruppe-adler.de/ to convert to paa, resolution must be a power of 2. recommended 2:1 L:W
+overviewPicture = "Textures\overview.paa"; //picture that shows up when selecting scenario, same rules as loadScreen ^^^^^^^
+showSquadRadar = 0; //Defines if the Squad Radar is visible (0 - disabled / 1 - enabled)
+allowProfileGlasses = 0; //disables the player chosen glasses/facewear, good for stuff where facewear is kinda important (0 - disabled / 1 - enabled)
+disableChannels[] = { 0, 1, 2, 3, 4, 5 }; // disabled in-game channels (Global 0 / Side 1 / Command 2 / Group 3 / Vehicle 4 / Direct 5), leave empty if not using tfar
+forceRotorLibSimulation = 0; //Helicopter advanced flight model (0 - player's options / 1 - enabled / 2 - disabled)
+showGroupIndicator = 0; //Changes default GPS mini map into a radar like display that indicates group members relative position to the player (0 - disabled / 1 - enabled)
+aiKills = 0; //allows ai to show up in the scoreboard (0 - disabled / 1 - enabled)
+respawnButton = 1; //Respawn button in menu (0 - disabled / 1 - enabled)
+
+//Metadata
+class Header
+{
+gameType = Zeus; //game type, the game doesnt actually enforce this, its just metadata
+minPlayers = 3; //min players for scenario, the game doesnt actually enforce this, its just metadata
+maxPlayers = 20; //max players for scenario, the game doesnt actually enforce this, its just metadata
+};
+
+//Custom Sound Config
+class CfgSounds
+{
+	sounds[] = {};
+
+	//If wanting multiple sounds, just copy and paste this through the commented "Copy through here" and fill out with a new sound
+	class planefx
+	{
+		name = "plane fx";	//display name in the sounds menu (e.g. the sounds tab on a trigger)
+		sound[] = { "Sounds\sfx.ogg", 5, 1, 100 };	//file path (.ogg files are preferred), volume, pitch, maxDistance
+
+		//Subtitles for the sound if desired
+		titles[] = { 0, "" }; //subtitles for the sound
+		titlesFont = "Zeppelin32"; //xtitles font family (https://community.bistudio.com/wiki/FXY_File_Format#Available_Fonts)
+		titlesSize = 0.1; //titles font size
+		forceTitles = 1; //display titles even if global show titles option is off (1) or not (0)
+		titlesStructured = 1; //treat titles as Structured Text (1) or not (0)
+	};
+	//Copy through here
+};
