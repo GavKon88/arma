@@ -4,12 +4,12 @@
 *Last modified: 10 / 29 / 23
 *
 *Allows for random assigning of damage with ace medical per wound type
-*@parameter _object the human object in question
-*@parameter _type the type of damage (accepted: bullet, stab, explosive, crash, fall)
-*@parameter _amount the amount of hits that _object should take
+*@parameter _object the human object in question (object)
+*@parameter _type the type of damage (accepted: bullet, stab, explosive, crash, fall) (string)
+*@parameter _amount the amount of hits that _object should take (integer)
 *@parameter _severity the severity of the wound(s) (0-1)
-*@parameter _uncon whether or not _object should be guaranteed uncon post-hit (true/false)
-*@parameter _unconTime time for which the uncon should take place while not stable (pass 0 if not uncon). will wake up if stable at end of time
+*@parameter _uncon whether or not _object should be guaranteed uncon post-hit (boolean)
+*@parameter _unconTime time for which the uncon should take place while not stable (pass 0 if not uncon). will wake up if stable at end of time (integer)
 *
 *for example: 
 *[player, "bullet", 2, 0.7, false, 0] execVM "Scripts\GaRDS.sqf"; 
