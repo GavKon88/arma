@@ -4,7 +4,8 @@ A collection of resources made for personal use in the game ArmA 3. If you find 
 ## List of scripts:                                                                                                             
 GaRDS - Gavin's ace Random Damage System                                                                                   
 TPBVS - Teleport Behind Vehicle System                                                                                     
-                                                                                                                           
+GICS - Gavin's Improved Crash System (WIP)                                                                                 
+
                                                                                                                            
 
 ## List of resources:                                                                                                         
