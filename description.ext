@@ -25,6 +25,7 @@ disableChannels[] = { 0, 1, 2, 3, 4, 5 }; // disabled in-game channels (Global 0
 forceRotorLibSimulation = 0; //Helicopter advanced flight model (0 - player's options / 1 - enabled / 2 - disabled)
 showGroupIndicator = 0; //Changes default GPS mini map into a radar like display that indicates group members relative position to the player (0 - disabled / 1 - enabled)
 aiKills = 0; //allows ai to show up in the scoreboard (0 - disabled / 1 - enabled)
+disabledAI = 1; // (0 Fills empty playable slots with AI / 1 They Don't fill the empty slots)
 respawnButton = 1; //Respawn button in menu (0 - disabled / 1 - enabled)
 
 //Metadata
