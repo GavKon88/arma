@@ -7,6 +7,6 @@ TPBVS - Teleport Behind Vehicle System
                                                                                                                            
                                                                                                                            
 
-## List of resources:                                                                                                         
+## List of additional resources:                                                                                                         
 description.ext Template                                                                                                   
 Example File Structure                                                                                                     
